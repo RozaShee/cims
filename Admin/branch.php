@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include 'pages/head.php'; ?>
+<?php include 'admin.php'; ?>
+<?php include 'checkAdmin.php'; ?>
+
+<body>
+<div id="sidebar" class="active">
+    <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-between mt-0 px-2">
+                <h1 class="mb-0"><a href="index.php" class="text-warning h5 mb-0 px-2 ">2NK Sacco </a></h1>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="menu">
+                <!-- Existing menu items -->
+                <li class="sidebar-item active ">
+                    <a href="index.php" class='sidebar-link'>
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item ">
+                    <a href="customer.php" class='sidebar-link'>
+                        <i class="bi bi-people-fill"></i>
+                        <span>Customer</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="price.php" class='sidebar-link'>
+                        <i class="bi bi-table"></i>
+                        <span>Price Table</span>
+                    </a>
+                </li>
+                <!-- Add Reports dropdown -->
+               <div id="sidebar" class="active">
+    <div class="sidebar-wrapper active">
+        <div class="sidebar-header">
+            <div class="d-flex justify-content-between mt-0 px-2">
+                <h1 class="mb-0"><a href="index.php" class="text-warning h5 mb-0 px-2 ">2NK Sacco </a></h1>
+            </div>
+        </div>
+        <div class="sidebar-menu">
+            <ul class="menu">
+                <!-- Existing menu items -->
+                <li class="sidebar-item active ">
+                    <a href="index.php" class='sidebar-link'>
+                        <i class="bi bi-grid-fill"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item ">
+                    <a href="customer.php" class='sidebar-link'>
+                        <i class="bi bi-people-fill"></i>
+                        <span>Customer</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="price.php" class='sidebar-link'>
+                        <i class="bi bi-table"></i>
+                        <span>Price Table</span>
+                    </a>
+                </li>
+                <!-- Add Reports dropdown 
+                <li class="sidebar-item has-dropdown">
+                    <a href="#" class='sidebar-link'>
+                        <i class="bi bi-file-earmark-bar-graph"></i>
+                        <span>Reports</span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="price_chart.php" class="sidebar-link">Price Chart</a></li>
+                        <li><a href="customer_chart.php" class="sidebar-link">Customer Chart</a></li>
+                        <li><a href="cust_request_chart.php" class="sidebar-link">Customer Request Chart</a></li>
+                        <li><a href="area_chart.php" class="sidebar-link">Area Chart</a></li>
+                    </ul>
+                </li> -->
+                <!-- Continue with existing menu items -->
+                <li class="sidebar-item">
+                    <a href="courier.php" class='sidebar-link'>
+                        <i class="bi bi-truck"></i>
+                        <span>Courier</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                        <a href="reviews_display.php" class='sidebar-link'>
+                            <i class="bi bi-star-fill"></i> <!-- Filled star -->
+                            <span>Reviews</span>
+                        </a>
+                </li>   
+               <li class="sidebar-item">
+                            <a href="message.php" class='sidebar-link'>
+                                <i class="bi bi-chat"></i>
+                                <span>Message</span>
+                            </a>
+                        </li>
+                        <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin') : ?>
+                            <li class="sidebar-item">
+                                <a href="branch.php" class='sidebar-link'>
+                                    <i class="bi bi-columns"></i>
+                                    <span>Branches</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                        <li class="sidebar-item">
+                            <a href="employee.php" class='sidebar-link'>
+                                <i class="bi bi-person-fill"></i>
+                                <span>Employee </span>
+                            </a>
+                        </li>
+                        <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin') : ?>
+                            <li class="sidebar-item">
+                                <a href="area.php" class='sidebar-link'>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>Area</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="gallery.php" class='sidebar-link'>
+                                    <i class="bi bi-images"></i>
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                <li class="sidebar-item">
+                    <a href="settings.php" class='sidebar-link'>
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="logout.php" class='sidebar-link'>
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+    </div>
+</div>
+
+                <!-- Continue with existing menu items -->
+                <li class="sidebar-item">
+                    <a href="courier.php" class='sidebar-link'>
+                        <i class="bi bi-truck"></i>
+                        <span>Courier</span>
+                    </a>
+                </li>
+               <li class="sidebar-item">
+                            <a href="message.php" class='sidebar-link'>
+                                <i class="bi bi-chat"></i>
+                                <span>Message</span>
+                            </a>
+                        </li>
+                        <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin') : ?>
+                            <li class="sidebar-item">
+                                <a href="branch.php" class='sidebar-link'>
+                                    <i class="bi bi-columns"></i>
+                                    <span>Branches</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                        <li class="sidebar-item">
+                            <a href="employee.php" class='sidebar-link'>
+                                <i class="bi bi-person-fill"></i>
+                                <span>Employee </span>
+                            </a>
+                        </li>
+                        <?php if (isset($_SESSION['admin']) && $_SESSION['admin'] == 'admin') : ?>
+                            <li class="sidebar-item">
+                                <a href="area.php" class='sidebar-link'>
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <span>Area</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="reviews_display.php" class='sidebar-link'>
+                                    <i class="bi bi-star-fill"></i> <!-- Filled star -->
+                                    <span>Reviews</span>
+                                </a>
+                            <li class="sidebar-item">
+                                <a href="gallery.php" class='sidebar-link'>
+                                    <i class="bi bi-images"></i>
+                                    <span>Gallery</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                <li class="sidebar-item">
+                    <a href="settings.php" class='sidebar-link'>
+                        <i class="bi bi-gear-fill"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="logout.php" class='sidebar-link'>
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+    </div>
+</div>
+
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+
+            <div class="page-heading">
+                <h3>Branches</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Branch List</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#BranchModal"> Add
+                        New</button>
+                </div>
+            </div>
+            <div class="page-content">
+                <section class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="row">
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr>
+                                        <th>Branch Name</th>
+                                        <th></th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $getall = getAllBranch();
+
+                                    while ($row = mysqli_fetch_assoc($getall)) {
+
+                                        $branch_id = $row['branch_id']; ?>
+
+
+<tr>
+    <td><?php echo $row['branch_name']; ?></td>
+    <td>
+        <button type="button" onclick="deleteBranch(<?php echo $row['branch_id']; ?>)" class="btn btn-darkblue">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </td>
+</tr>
+
+                                    <?php } ?>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <?php include 'pages/footer.php'; ?>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="BranchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">Branch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="" method="post" id="basicform" data-parsley-validate="" enctype="multipart/form-data">
+                    <div class="modal-body bg-white">
+                        <form action="" method="post" id="basicform" data-parsley-validate="">
+                            <div class="col-md-12">
+                                <label for="cat_name" class="form-label">Branch Name</label>
+                                <input type="text" class="form-control" name="branch_name" id="branch_name" placeholder="Branch Name" required>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                        <button type="button" onclick="addBranch(this.form)" name="submit" class="btn btn-primary">Save
+                            changes</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+    function deleteBranch(branchId) {
+        // Display a custom confirmation prompt
+        var confirmed = window.confirm('Are you sure you want to delete this branch?');
+
+        if (confirmed) {
+            // Assuming you're using AJAX to send a request to delete the branch
+            // You can customize this part based on your backend implementation
+
+            // Example AJAX request using Fetch API
+            fetch('delete_branch.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    branchId: branchId,
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response, you can update the UI or perform any other actions
+                console.log('Branch deleted successfully:', data);
+                // Refresh the page after successful deletion
+                location.reload();
+            })
+            .catch(error => {
+                console.error('Error deleting branch:', error);
+            });
+        }
+    }
+</script>
+</body>
+
+</html>

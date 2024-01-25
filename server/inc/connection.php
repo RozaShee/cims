@@ -1,0 +1,1 @@
+<?php $con =  mysqli_connect("localhost", "root", "" , "cimsdb") or die("Database Connection Fail"); ?>
